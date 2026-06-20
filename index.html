@@ -209,17 +209,13 @@
     gap:18px;
     position:relative;
     overflow:hidden;
-  }
-  .photo-frame .ph-icon{opacity:.55;}
-  .photo-frame .ph-text{
-    font-family:var(--f-mono);
-    color:var(--gray);
-    font-size:.78rem;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-    text-align:center;
-    padding:0 30px;
-  }
+}
+.photo-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
   .photo-tag{
     position:absolute;
     top:14px;right:14px;
