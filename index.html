@@ -109,6 +109,14 @@
     color:var(--red);
     transform:translateY(-2px);
   }
+  button{
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px rgba(255,30,45,0.6);
+}
   .btn-block{width:100%;justify-content:center;}
 
   /* ---------- nav ---------- */
@@ -144,15 +152,17 @@
 
   /* ---------- hero ---------- */
   .hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    padding:160px 0 100px;
-    position:relative;
-    background:
-      radial-gradient(ellipse 60% 50% at 78% 35%, var(--red-glow), transparent 60%),
-      var(--bg);
-    overflow:hidden;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:160px 0 100px;
+  position:relative;
+  background:
+    radial-gradient(ellipse 60% 50% at 78% 35%, var(--red-glow), transparent 60%),
+    linear-gradient(120deg, #000000, #1a0000),
+    var(--bg);
+  overflow:hidden;
+
   }
   .hero-grid{
     display:grid;
@@ -175,15 +185,17 @@
   }
   .hero-text{position:relative;z-index:2;}
   .hero-text h1{
-    font-size:clamp(3.2rem,8vw,6.6rem);
-    margin-bottom:22px;
+  font-size:clamp(3.2rem,8vw,6.6rem);
+  margin-bottom:22px;
+  font-weight:800;
+  letter-spacing:-1px;
+  line-height:1.1;
+
   }
-  .hero-text h1 .line2{color:var(--red);}
-  .hero-text .sub{
-    color:var(--gray);
-    font-size:1.15rem;
-    max-width:480px;
-    margin-bottom:38px;
+  .hero-text h1 .line2{
+  color:var(--red);
+  text-shadow:0 0 20px rgba(255,30,45,0.6);
+
   }
   .hero-cta{display:flex;gap:16px;flex-wrap:wrap;}
   .hero-stats{
@@ -215,6 +227,14 @@
     height:100%;
     object-fit:cover;
     display:block;
+.photo-frame{
+  box-shadow:0 20px 60px rgba(0,0,0,0.7);
+  transition:0.4s;
+}
+
+.photo-frame:hover{
+  transform:scale(1.03);
+
 }
   .photo-tag{
     position:absolute;
